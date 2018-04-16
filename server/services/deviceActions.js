@@ -32,8 +32,6 @@ export default class DeviceActions {
         this.switchDevice(device.id, variant.value)
         break
     }
-
-    console.log('>>', device, variant)
   }
 
   updateDevice = id => {
@@ -43,10 +41,6 @@ export default class DeviceActions {
   }
 
   switchDevice = (id, state) => {
-    if (['on', 'off'].some(v => v === state)) {
-      return api.runDeviceCommand(id, state)
-    }
-
-    return Promise.reject()
+    return api.runDeviceCommand(id, state === true ? 'on' : 'off')
   }
 }

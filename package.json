@@ -18,22 +18,29 @@
     "express": "^4.16.3",
     "express-session": "^1.15.6",
     "lodash": "^4.17.5",
+    "moment": "^2.22.0",
     "mongoose": "^5.0.12",
     "node-opcua": "^0.2.3",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
+    "react-fontawesome": "^1.6.1",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-scripts": "^1.0.17",
+    "reactstrap": "^5.0.0-beta.3",
+    "recharts": "^1.0.0-beta.10",
     "recompose": "^0.26.0",
     "redux": "^3.7.2",
     "redux-actions": "^2.2.1",
     "redux-devtools-extension": "^2.13.2",
     "redux-thunk": "^2.2.0",
     "reselect": "^3.0.1",
+    "shortid": "^2.2.8",
+    "socket.io": "^2.1.0",
     "styled-components": "^2.3.0",
+    "treeify": "^1.1.0",
     "winston": "^3.0.0-rc3"
   },
   "devDependencies": {
@@ -64,7 +71,8 @@
     "lint": "eslint **/*.js --quiet",
     "lint-fix": "eslint --fix",
     "generate": "plop --plopfile generators/index.js",
-    "serve:dev": "NODE_ENV=development nodemon --inspect ./server/server.js"
+    "serve:dev": "NODE_ENV=development nodemon --ignore ./src ./server/server.js",
+    "serve:dev:inspect": "NODE_ENV=development nodemon --ignore ./src --inspect ./server/server.js"
   },
   "lint-staged": {
     "{,!(build|generators)/**/}*.js": [

@@ -9,11 +9,13 @@ export default class ZWay {
 
   constructor(user) {
     this.user = user
+    this.c = 0
 
     api.fetchDevises().then(resp => {
       this.Device = new DeviceService(resp.data.devices, this.user)
 
       setInterval(() => {
+        this.c = this.c + 1
         this.checkDevices()
       }, 2000)
     })

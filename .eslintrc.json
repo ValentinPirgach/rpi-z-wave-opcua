@@ -29,6 +29,8 @@
     "no-console": 0,
     "no-underscore-dangle": 0,
     "no-param-reassign": 0,
-    "default-case": 0
+    "default-case": 0,
+    "no-new": 0,
+    "class-methods-use-this": 0
   }
 }

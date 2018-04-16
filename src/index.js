@@ -7,8 +7,7 @@ import 'styles/global-styles'
 import registerServiceWorker from 'utils/registerServiceWorker'
 import axios from 'axios'
 
-axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://raspberrypi.local';
-axios.defaults.headers.common.ZWAYSession = process.env.REACT_APP_AUTH_SESSION;
+axios.defaults.baseURL = process.env.REACT_APP_API_URL
 
 render(
   <Provider store={configureStore()}>

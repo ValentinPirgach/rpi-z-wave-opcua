@@ -20,22 +20,8 @@ export default class ZWayAuth {
 
     const user = await User.findOne({ login: credentials.login })
 
-    let unauthtorized = false
-
-    try {
-      await api.profile(user.id)
-    } catch (e) {
-      unauthtorized = e.response.status === 401
-
-      console.log('unauthtorized >>>', unauthtorized)
-    }
-
-    if (!user.sid || unauthtorized) {
-      const auth = await api.authenticate(credentials)
-      const updated = await User.findByIdAndUpdate(user._id, auth.data)
-      return updated
-    }
-
-    return user
+    const auth = await api.authenticate(credentials)
+    const updated = await User.findByIdAndUpdate(user._id, auth.data)
+    return updated
   }
 }
