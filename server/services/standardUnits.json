@@ -1,0 +1,352 @@
+{
+  "ampere": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4279632,
+    "displayName": {
+      "text": "A"
+    },
+    "description": {
+      "text": "ampere"
+    }
+  },
+  "bar": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4342098,
+    "displayName": {
+      "text": "bar"
+    },
+    "description": {
+      "text": "bar [unit of pressure] = 1E5 Pa"
+    }
+  },
+  "becquerel": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4346188,
+    "displayName": {
+      "text": "Bq"
+    },
+    "description": {
+      "text": "becquerel = 27,027E-12 Ci"
+    }
+  },
+  "kilobecquerel": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 12881,
+    "displayName": {
+      "text": "kBq"
+    },
+    "description": {
+      "text": "kilo becquerel = 1E3 Bq"
+    }
+  },
+  "gigabecquerel": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4670033,
+    "displayName": {
+      "text": "GBq"
+    },
+    "description": {
+      "text": "Giga becquerel = 1E9 Bq"
+    }
+  },
+  "curie": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4412754,
+    "displayName": {
+      "text": "Ci"
+    },
+    "description": {
+      "text": "Curie = 3,7E-10 Bq"
+    }
+  },
+  "curie_per_kilogram": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4273202,
+    "displayName": {
+      "text": "Ci/kg"
+    },
+    "description": {
+      "text": "Curie per kilogram = 3,7E-10 Bq/kg"
+    }
+  },
+  "cubic_centimetre": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4410705,
+    "displayName": {
+      "text": "cm^3"
+    },
+    "description": {
+      "text": "Cubic centimetre = 1E-6 m^3"
+    }
+  },
+  "cubic_centimetre_per_second": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 12874,
+    "displayName": {
+      "text": "cm^3/s"
+    },
+    "description": {
+      "text": "Cubic centimetre per second"
+    }
+  },
+  "cubic_metre": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 5067857,
+    "displayName": {
+      "text": "m^3"
+    },
+    "description": {
+      "text": "Cubic metre"
+    }
+  },
+  "cubic_metre_per_hour": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 5067080,
+    "displayName": {
+      "text": "m^3"
+    },
+    "description": {
+      "text": "Cubic metre per hours = 2,777 78 x 10⁻⁴ m³/s"
+    }
+  },
+  "degree": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 17476,
+    "displayName": {
+      "text": "°"
+    },
+    "description": {
+      "text": "degree [unit of angle]"
+    }
+  },
+  "degree_celsius": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4408652,
+    "displayName": {
+      "text": "°C"
+    },
+    "description": {
+      "text": "degree Celsius"
+    }
+  },
+  "degree_fahrenheit": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4604232,
+    "displayName": {
+      "text": "°F"
+    },
+    "description": {
+      "text": "degree Fahrenheit 9/5(°C) + 32°"
+    }
+  },
+  "kelvin": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4932940,
+    "displayName": {
+      "text": "K"
+    },
+    "description": {
+      "text": "degree Kelvin"
+    }
+  },
+  "dots_per_inch": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4535097,
+    "displayName": {
+      "text": "dpi"
+    },
+    "description": {
+      "text": "dot per inch"
+    }
+  },
+  "electron_volt": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4273459,
+    "displayName": {
+      "text": "eV"
+    },
+    "description": {
+      "text": "electron volt"
+    }
+  },
+  "kilo_electron_volt": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4338233,
+    "displayName": {
+      "text": "keV"
+    },
+    "description": {
+      "text": "kilo electron volt"
+    }
+  },
+  "mega_electron_volt": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4339505,
+    "displayName": {
+      "text": "MeV"
+    },
+    "description": {
+      "text": "mega electron volt"
+    }
+  },
+  "farad": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4604242,
+    "displayName": {
+      "text": "F"
+    },
+    "description": {
+      "text": "Farad = kg⁻¹ x m⁻² x s⁴ x     A²"
+    }
+  },
+  "gram": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4674125,
+    "displayName": {
+      "text": "g"
+    },
+    "description": {
+      "text": "gramme 1E-3 kg"
+    }
+  },
+  "joule": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4869973,
+    "displayName": {
+      "text": "J"
+    },
+    "description": {
+      "text": "Joule"
+    }
+  },
+  "kilohertz": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4933722,
+    "displayName": {
+      "text": "kHz"
+    },
+    "description": {
+      "text": "kilo hertz = 1E3 Hertz"
+    }
+  },
+  "metre": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 5067858,
+    "displayName": {
+      "text": "m"
+    },
+    "description": {
+      "text": "metre"
+    }
+  },
+  "centimetre": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4410708,
+    "displayName": {
+      "text": "cm"
+    },
+    "description": {
+      "text": "centimetre = 1E-2 m"
+    }
+  },
+  "millimetre": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 5066068,
+    "displayName": {
+      "text": "mm"
+    },
+    "description": {
+      "text": "millimetre = 1E-3 metre"
+    }
+  },
+  "megawatt": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 5062999,
+    "displayName": {
+      "text": "MW"
+    },
+    "description": {
+      "text": "Mega Watt"
+    }
+  },
+  "newton": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 5129559,
+    "displayName": {
+      "text": "N"
+    },
+    "description": {
+      "text": "Newton (kg x m)/s² "
+    }
+  },
+  "percent": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 20529,
+    "displayName": {
+      "text": "%"
+    },
+    "description": {
+      "text": "Percent, a unit of proportion equal to 0.01. "
+    }
+  },
+  "pixel": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4535095,
+    "displayName": {
+      "text": ""
+    },
+    "description": {
+      "text": "pixel:  unit of count defining the number of pixels (pixel: picture element)"
+    }
+  },
+  "volt": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 5655636,
+    "displayName": {
+      "text": "V"
+    },
+    "description": {
+      "text": "Volt"
+    }
+  },
+  "watt": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 5723220,
+    "displayName": {
+      "text": "W"
+    },
+    "description": {
+      "text": "Watt"
+    }
+  },
+  "second": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 5457219,
+    "displayName": {
+      "text": "s"
+    },
+    "description": {
+      "text": "second"
+    }
+  },
+  "millisecond": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4403766,
+    "displayName": {
+      "text": "ms"
+    },
+    "description": {
+      "text": "millisecond =1E-3 second"
+    }
+  },
+  "microsecond": {
+    "namespaceUri": "http://www.opcfoundation.org/UA/units/un/cefact",
+    "unitId": 4340024,
+    "displayName": {
+      "text": "μs"
+    },
+    "description": {
+      "text": "microsecond =1E-6 second"
+    }
+  }
+}
