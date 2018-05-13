@@ -104,26 +104,26 @@ export default class OPCUAClient {
       // console.log("->", element.browseName.name, element.nodeId.toString());
     })
 
-    setTimeout(() => {
-      this.crawler.read(nodeId, async (err, obj) => {
-        if (!err) {
-          const devices = obj.organizes.map(d => ({
-            browseName: d.browseName,
-            nodeId: d.nodeId,
-            componentsCount: d.hasComponent ? d.hasComponent.length : 0,
-          }))
-
-          console.log('>>>>>>', devices)
-
-          await Device.remove({})
-
-          devices.forEach(async device => {
-            await Device.findOneAndUpdate({ nodeId: device.nodeId, browseName: device.browseName }, device, {
-              upsert: true,
-            })
-          })
-        }
-      })
-    }, 1000)
+    // setTimeout(() => {
+    //   this.crawler.read(nodeId, async (err, obj) => {
+    //     if (!err) {
+    //       const devices = obj.organizes.map(d => ({
+    //         browseName: d.browseName,
+    //         nodeId: d.nodeId,
+    //         componentsCount: d.hasComponent ? d.hasComponent.length : 0,
+    //       }))
+    //
+    //       console.log('>>>>>>', devices)
+    //
+    //       await Device.remove({})
+    //
+    //       devices.forEach(async device => {
+    //         await Device.findOneAndUpdate({ nodeId: device.nodeId, browseName: device.browseName }, device, {
+    //           upsert: true,
+    //         })
+    //       })
+    //     }
+    //   })
+    // }, 1000)
   }
 }

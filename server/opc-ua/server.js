@@ -8,6 +8,8 @@ export default class OPCUAServer {
       return OPCUAServer.instance
     }
 
+    console.log(opcua)
+
     this.server = new opcua.OPCUAServer({
       port: process.env.OPCUA_PORT, // the port of the listening socket of the server
       resourcePath: 'UA/RpiZWaveServer', // this path will be added to the endpoint resource name

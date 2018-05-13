@@ -50,6 +50,7 @@ export default class DeviceOPCInfo {
   getDataTypeAsString() {
     if (this.device.metrics && this.device.metrics.level) {
       const checked = DeviceOPCInfo.checkForSwitch(this.device.metrics.level)
+      console.log(this.device.metrics.title, checked)
       return DeviceOPCInfo.DATA_TYPES[checked.type]
     }
 

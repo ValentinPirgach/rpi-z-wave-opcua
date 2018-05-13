@@ -112,12 +112,16 @@ export default class DeviceService {
   }
 
   registerOPC = () => {
+    // Додавання теки об'єктів з ім'ям Devices та ідентифікатором вузла
+    // До адресного простору серверу
     const nodeId = new opcua.NodeId(opcua.NodeIdType.NUMERIC, 100, 1)
     const devicesNode = this.OPCUAServer.server.engine.addressSpace.addFolder('ObjectsFolder', {
       browseName: 'Devices',
       nodeId,
     })
 
+    // Створення об'єкту для кожного пристрою Z-wave,
+    // що належить до теки Devices
     Object.keys(this.devices).forEach(group => {
       const groupNode = this.OPCUAServer.server.engine.addressSpace.addObject({
         browseName: group,
@@ -125,9 +129,11 @@ export default class DeviceService {
       })
 
       this.devices[group].forEach(device => {
+        // Якщо тип змінної Z-wave об'єкту є числовий - створюється аналогова змінна
         if (device.metrics && device.metrics.level && typeof device.metrics.level === 'number') {
           this.addAnalogItem(groupNode, device)
         } else {
+          // інакше створюється звичайна змінна
           this.addVariable(groupNode, device)
         }
       })

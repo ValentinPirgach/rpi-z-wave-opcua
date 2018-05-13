@@ -15,9 +15,12 @@ export default class ZWay {
       this.Device = new DeviceService(resp.data.devices, this.user)
 
       setInterval(() => {
-        this.c = this.c + 1
         this.checkDevices()
       }, 2000)
+
+      setInterval(() => {
+        this.c = this.c + 1
+      }, 1000)
     })
   }
 
@@ -31,8 +34,9 @@ export default class ZWay {
 
   checkDevices = async () => {
     const resp = await api.checkDevices()
-
-    this.Device.updateDevices(resp.data.devices, Math.floor(Math.random() * 100) + 1)
+    const testValue = (1.0 + Math.sin(this.c / 360 * 3)) / 2.0
+    // Math.floor(Math.random() * 100) + 1
+    this.Device.updateDevices(resp.data.devices, testValue)
   }
 
   setDeviceName = async ({ value }) => {
