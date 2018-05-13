@@ -40,7 +40,5 @@ export default class DeviceActions {
     })
   }
 
-  switchDevice = (id, state) => {
-    return api.runDeviceCommand(id, state === true ? 'on' : 'off')
-  }
+  switchDevice = (id, state) => api.runDeviceCommand(id, state === true ? 'on' : 'off')
 }

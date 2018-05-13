@@ -1,13 +1,13 @@
 import OPCUAClient from '../opc-ua/client'
-import MonitorItems from '../services/monitorItems'
-import Tag from '../models/Tag'
+// import MonitorItems from '../services/monitorItems'
+// import Tag from '../models/Tag'
 
 export default class TagsController {
   show(req, res) {
-    const monitor = new MonitorItems()
+    // const monitor = new MonitorItems()
     const client = new OPCUAClient()
     const nodeId = req.params.nodeId
-    const item = monitor.watch(nodeId)
+    // const item = monitor.watch(nodeId)
 
     // item.on('changed', () => {
     //

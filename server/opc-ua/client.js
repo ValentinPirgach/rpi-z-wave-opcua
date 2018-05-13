@@ -1,8 +1,8 @@
 import opcua from 'node-opcua'
-import { debounce } from 'lodash'
-import treeify from 'treeify'
+// import { debounce } from 'lodash'
+// import treeify from 'treeify'
 import socketio from 'socket.io'
-import MonitorItems from '../services/monitorItems'
+// import MonitorItems from '../services/monitorItems'
 import Device from '../models/Device'
 // export default client
 
@@ -101,29 +101,29 @@ export default class OPCUAClient {
     console.log('now crawling object folder ...please wait...')
 
     this.crawler.on('browsed', element => {
-      // console.log("->", element.browseName.name, element.nodeId.toString());
+      console.log('->', element.browseName.name, element.nodeId.toString())
     })
 
-    // setTimeout(() => {
-    //   this.crawler.read(nodeId, async (err, obj) => {
-    //     if (!err) {
-    //       const devices = obj.organizes.map(d => ({
-    //         browseName: d.browseName,
-    //         nodeId: d.nodeId,
-    //         componentsCount: d.hasComponent ? d.hasComponent.length : 0,
-    //       }))
-    //
-    //       console.log('>>>>>>', devices)
-    //
-    //       await Device.remove({})
-    //
-    //       devices.forEach(async device => {
-    //         await Device.findOneAndUpdate({ nodeId: device.nodeId, browseName: device.browseName }, device, {
-    //           upsert: true,
-    //         })
-    //       })
-    //     }
-    //   })
-    // }, 1000)
+    setTimeout(() => {
+      this.crawler.read(nodeId, async (err, obj) => {
+        if (!err) {
+          const devices = obj.organizes.map(d => ({
+            browseName: d.browseName,
+            nodeId: d.nodeId,
+            componentsCount: d.hasComponent ? d.hasComponent.length : 0,
+          }))
+
+          console.log('>>>>>>', devices)
+
+          await Device.remove({})
+
+          devices.forEach(async device => {
+            await Device.findOneAndUpdate({ nodeId: device.nodeId, browseName: device.browseName }, device, {
+              upsert: true,
+            })
+          })
+        }
+      })
+    }, 1000)
   }
 }

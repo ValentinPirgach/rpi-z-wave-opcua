@@ -14,18 +14,11 @@ import routes from './routes'
 import './config/axios'
 import './zway'
 
+/* eslint no-unused-vars: 0 */
+
 const MongoStore = connectMongo(session)
 const app = express()
 const server = http.Server(app)
-
-// app.use(
-//   session({
-//     store: new MongoStore({ mongooseConnection: mongoose.connection }),
-//     resave: true,
-//     saveUninitialized: true,
-//     secret: '_rpi-opc',
-//   })
-// )
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*')
